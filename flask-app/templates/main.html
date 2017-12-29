@@ -6,6 +6,9 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+
+    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
+
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -21,10 +24,28 @@
     <title>Document</title>
 </head>
 <body>
-<div class="center-align">
-    <h1>Halo this is our first app</h1>
+<div class="header blue darken-2">
 
-    <p>it will be a core index of psy docs</p>
+    <div class=" center-align ">
+
+        <h1>Halo this is our first app</h1>
+
+    </div>
+    <p class="center-align">it will be a core index of psy docs</p>
 </div>
+
+<div class="main">
+    {% block conteudo %}{% endblock %}
+</div>
+
+
+<footer class="page-footer grey">
+    <h5 class="center-align">this is the footer my brother</h5>
+    <div class="footer-copyright ">
+        <span class="container center-align">
+        @here is our copy
+        </span>
+    </div>
+</footer>
 </body>
 </html>
